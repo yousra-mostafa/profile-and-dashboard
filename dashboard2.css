@@ -1,0 +1,470 @@
+/* -------------general--------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* 64a7d3
+56ccf2
+1e3f6a
+3863f2 */
+:root {
+    --color1: #64a7d3;
+    --color2: #56ccf2;
+    /* --section: rgb(99, 110, 114, 0.1); */
+    --navColor: #1e3f6a;
+    --color3: #3863f2;
+    --white: #fff;
+    --gray: #373737
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+
+}
+h3{
+    font-weight: 700;
+    font-size: 23px;
+    padding: 25px 0 0 0;
+
+  }
+
+.conteainer{
+  /* From https://css.glass */
+background: #ffffff;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.8px);
+-webkit-backdrop-filter: blur(2.8px);
+border: 1px solid rgba(24, 140, 230, 0.84);
+}
+
+  section{
+  margin-top: 50px;
+  /* height: auto; */
+  /* overflow: hidden; */
+  /* height: fit-content; */
+  /* From https://css.glass */
+
+  
+}
+.first-cards{
+  height: 150px;
+  margin-top: 100px;
+}
+/* ------------end general------------ */
+/* -------------javaScript class------------- */
+.headar-span{
+  transition: display 1s ease-in-out;
+}
+.toggel-div {
+  /* Other styles */
+  transition: margin-left 0.5s ease-in-out; /* Add transition for margin-left */
+}
+/* -----------end javascript----------- */
+.home{
+    margin: 28px 0 0 0;
+    display: flex;
+    align-items: center;
+
+}
+.margin-home{
+    padding-top: 5px;
+}
+hr{
+    margin: 0;
+}
+hr.horizontal {
+    background-color: transparent;
+  }
+  
+  hr.horizontal.light {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), #fff, rgba(255, 255, 255, 0));
+  }
+  
+  hr.horizontal.dark {
+    background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4), transparent);
+  }
+  
+  hr.horizontal.gray-light {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  }
+
+  
+  hr {
+    border-top: none;
+    height: 2px;
+  }
+  
+  hr.vertical {
+    position: absolute;
+    background-color: transparent;
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 1px;
+  }
+  
+  hr.vertical.light {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), #fff, rgba(255, 255, 255, 0));
+  }
+  
+  hr.vertical.dark {
+    background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4), transparent);
+  }
+  
+  hr.vertical.gray-light {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  }
+  
+
+  /* ---------------navbar---------- */
+  /* -----------------nav1-------- */
+  .nav1{
+    height: 50px;
+    z-index: 4444;
+    padding: 15px;
+    background-color: #373737;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .nav1 button{
+    all: unset;
+    /* display: inline-block; */
+  }
+  .nav1 button i{
+    color: #fff;
+    margin-right: 18px;
+  }
+  /* ---------------nav2------------------- */
+  .navbar ul .margin-li{
+    margin-top: 24px;
+  }
+  .nav-h2{
+    font-size: 15px;
+    color: #fff;
+  }
+  
+
+  /* --------------header--------------- */
+  /* /* -----------------------header---------------- */
+#header {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 230px;
+  z-index: 9997;
+  padding: 0 15px;
+  background: var(--gray);
+  overflow-y: auto;
+  transition: width 0.5s ease-in-out;
+  background: var(--navColor);
+
+}
+
+#header .flex-column {
+  flex-direction: column;
+  gap: 50px;
+}
+
+#header .profile img {
+  margin: 50px auto;
+  display: block;
+  width: 180px;
+  border: 8px solid var(--red);
+  border-radius: 50%;
+
+}
+
+#header .profile h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+} 
+.big{
+  font-size: 23px;
+}
+
+/* --------------------navbar-menue----------- */
+.navbar ul {
+  
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar a {
+  display: flex;
+}
+
+.navbar a i {
+  padding-right: .5rem;
+  margin-bottom: 2rem;
+}
+
+/* .navbar a:hover,
+.navbar .active {
+  color: #000;
+} */
+
+/* .navbar a:hover i,
+.navbar .active i {
+  color: var(--red);
+} */
+
+/* ---------------------body------------ */
+
+/* -------------first-two-card------- */
+.container1-left{
+  margin-left: 230px;
+  transition: margin-left 0.5s ease-in-out;
+
+  
+  /* background-color: #316099; */
+  
+}
+.container1{
+  width: 89%;
+  margin: auto;
+  /* overflow: hidden; */
+  /* margin-top: 50px; */
+
+  
+}
+.container1 .grid-for-two{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 60px;
+  grid-gap: 20px;
+  /* background-color: #316099; */
+
+  
+}
+.grid-for-two .flex{
+ 
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.lock-svg{
+  display: none;
+  height: 50px;
+}
+
+.card1 .card1-h{
+  /* /* display: inline-block; */
+  display: inline-block; 
+    padding-left: 13px;
+    font-size: larger;
+    font-weight: 900;
+}
+.garage-svg{
+  height: 50px;
+}
+.grid-for-two .card1{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  height: 130px;
+  /* background-color: #6c757d; */
+  margin-bottom: 50px;
+
+  /* column-gap: 50px; */
+}
+
+/* --------------- start main section ----------- */
+.grid-for-three{
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  /* column-gap: 5px; */
+}
+.three-card{
+  /* height: 460px; */
+  padding: 0 28px;
+  /* background-color: #373737; */
+  
+    margin: 0 .75rem 0 0 ;
+    /* background-color: rgba(15, 156, 230, .05); */
+    /* background-color: var(--color1); */
+    /* border: 1px solid rgba(15, 156, 230); */
+    /* box-shadow: inset 0 0 25px rgba(15,156,230,.25); */
+
+    /* From https://css.glass */
+/* background: rgba(100, 167, 211, 0.7); */
+/* background: #195477; */
+/* background: #1d2e3b; */
+
+/* 
+border-radius: 5px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.5px);
+-webkit-backdrop-filter: blur(6.5px);
+border: 1px solid rgba(100, 167, 211); */
+
+/* From https://css.glass */
+background: rgba(73, 143, 255, 0.38);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(2.8px);
+-webkit-backdrop-filter: blur(2.8px);
+border: 1px solid rgba(2, 192, 250, 0.84);
+
+
+}
+.three-card:hover{
+
+
+}
+
+.lights{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin-top: 35px;
+}
+.flex1{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.lights i{
+  font-size: 26px;
+  
+}
+.remove{
+  display: none;
+}
+.lamp-light{
+  background-color: #fff;
+  border-radius: 67px 51px 105px 105px;
+  box-shadow: white 0px 0px 5px 10px;
+}
+.main-h2{
+  font-size: 21px;
+  font-weight: 400;
+
+}
+.hr{
+  margin: 15px 0;
+}
+.two-buttons .control-btns{
+  all: unset;
+  color: #fff;
+  border: 1px solid rgba(15, 156, 230, .5);
+  /* background-color: rgba(15, 156, 230, .25); */
+  box-shadow: inset 0 0 12px rgba(15,156,230,.25), 0 0 12px rgba(15,156,230,.15);
+  padding: 5px 10px;
+  margin-bottom: 10px;
+
+
+  /* From https://css.glass */
+background: rgba(15, 156, 230, 0.35);
+border-radius: 5px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.9px);
+-webkit-backdrop-filter: blur(6.9px);
+border: 1px solid rgba(15, 156, 230, 0.3);
+
+}
+
+/* --------------- end main section ----------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start button on of  */
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 13px;
+  position: relative;
+  display: inline-block;
+  width: 5em;
+  height: 2.25em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4fa8dc;
+  outline: 1px solid #f3f8fe;
+  box-shadow: 0 4px 5px #f3f8fe inset, 0 4px 5px #c8d5e6;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "off";
+  font-size: 0.85em;
+  color: #1e3f6a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 2em;
+  min-width: 2em;
+  border-radius: 20px;
+  left: 0.35em;
+  bottom: 0.3em;
+  background-color: transparent;
+  outline: 2px solid #d2d6d8;
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider:before {
+  content: "on";
+  background-color: #d2d6d8;
+  color: white;
+  transform: translateX(3.1em);
+}
+
+/* end button on off */
+
