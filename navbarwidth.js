@@ -48,16 +48,30 @@ function manageNavWidth(){
 
 // --------------start toggel-light-------------
 var onOff = document.getElementsByClassName('toggel-light');
-var lamp = document.getElementsByClassName('lamp-light');
+var lamps = document.getElementsByClassName('lamp-light')[0];
+var closeLight = document.getElementsByClassName('close-light')[0]; 
+var AllON = document.getElementsByClassName('All-ON')[0];
+function controle(){
+    console.log("true");
+    // for (const lamp of lamps) { 
+    //     lamp.classList.toggle("remove");
+    // }
+    // for (const lampp of closeLight) { 
+    //     lampp.classList.toggle("remove");
 
-for(const item of onOff){
-    item.addEventListener("change", ()=>{
-        console.log("true");
-        for(const item of lamp){
-            lamp.classList.remove("remove");
-        }
+    // }
+    if (lamps && closeLight) { // Ensure lamps and closeLight elements are defined
+        lamps.classList.toggle('remove');
+        closeLight.classList.toggle('remove');
+    }
+};
 
-    })
+for (const item of onOff) {
+    item.addEventListener("change", controle)
+}
+ 
+if (AllON) { // Check if AllON element is defined
+    AllON.addEventListener("click", controle);
 }
 
 
@@ -66,3 +80,16 @@ for(const item of onOff){
 
 
 // ------------------end toggel-light------------
+// --------------------start delete Notification------------------
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    console.log("jjjjjj");
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// --------------------end delete Notification------------------

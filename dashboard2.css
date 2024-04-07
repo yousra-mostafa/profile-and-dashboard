@@ -7,7 +7,12 @@
 }
 
 body {
+  box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+    /* background-image: url("./donorProfileImg/home-automation-with-device.jpg"); */
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size:cover;
 
 }
 
@@ -62,7 +67,7 @@ border: 1px solid rgba(24, 140, 230, 0.84);
 }
 
   section{
-  margin-top: 50px;
+  margin: 50px 0;
   /* height: auto; */
   /* overflow: hidden; */
   /* height: fit-content; */
@@ -143,7 +148,7 @@ hr.horizontal {
   /* ---------------navbar---------- */
   /* -----------------nav1-------- */
   .nav1{
-    height: 50px;
+    /* height: 50px;
     z-index: 4444;
     padding: 15px;
     background-color: #373737;
@@ -152,7 +157,25 @@ hr.horizontal {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%; */
+    height: 50px;
+    z-index: 4444;
+    padding: 15px;
+    /* background-color: rgb(55, 55, 55); */
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     width: 100%;
+    /* background: rgb(156 161 172); */
+    /* background-color: #4fa8dc; */
+    /* background-color: #272424; */
+    background-color: #1e3f6a;
+    /* border: 1px solid rgb(89 117 126 / 84%); */
+    /* border-radius: 5px; */
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 30px;
+    backdrop-filter: blur(2.8px);
   }
   .nav1 button{
     all: unset;
@@ -244,7 +267,6 @@ hr.horizontal {
 .container1-left{
   margin-left: 230px;
   transition: margin-left 0.5s ease-in-out;
-
   
   /* background-color: #316099; */
   
@@ -300,8 +322,8 @@ hr.horizontal {
 /* --------------- start main section ----------- */
 .grid-for-three{
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr;
-  /* column-gap: 5px; */
+    grid-template-columns: 1.1fr 1.25fr 1fr;
+    /* column-gap: 5px; */
 }
 .three-card{
   /* height: 460px; */
@@ -327,12 +349,17 @@ backdrop-filter: blur(6.5px);
 border: 1px solid rgba(100, 167, 211); */
 
 /* From https://css.glass */
-background: rgba(73, 143, 255, 0.38);
-border-radius: 16px;
+
+
+
+}
+.three-card1{
+background: #4fa8dc;
+border: 1px solid rgba(2, 192, 250, 0.84);
+border-radius: 5px;
 box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
 backdrop-filter: blur(2.8px);
 -webkit-backdrop-filter: blur(2.8px);
-border: 1px solid rgba(2, 192, 250, 0.84);
 
 
 }
@@ -391,7 +418,62 @@ border: 1px solid rgba(15, 156, 230, 0.3);
 
 }
 
+/* ----------------cards2 in main section-------------- */
+.lights2{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin: 15px;
+
+}
+.margin-for-lights2{
+  margin-top: 30px;
+}
+
+/* ---------------cards3 in main section-------------- */
+.card3-main-section {
+  background: #4fa8dc;
+  border: 1px solid rgba(2, 192, 250, 0.84);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2.8px);
+  -webkit-backdrop-filter: blur(2.8px);
+}
+.theard-card{
+  height: 400px;
+}
+.card3-h{
+  margin-bottom: 15px;
+}
+.lights2 i {
+  font-size: 26px;
+}
+.card3-h2{
+  font-size: medium;
+  font-weight: 600;
+}
+.card3-p{
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.washing-svg{
+  height: 30px;
+}
+.flex-app{
+  display: flex;
+  /* align-items: center; */
+  gap: 8px;
+}
+.lights3{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin-top: 15px;
+}
+.margin-hr{
+  margin: 24px 0;
+}
 /* --------------- end main section ----------- */
+
 
 
 
@@ -434,7 +516,7 @@ border: 1px solid rgba(15, 156, 230, 0.3);
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #4fa8dc;
+  background-color: #fff;
   outline: 1px solid #f3f8fe;
   box-shadow: 0 4px 5px #f3f8fe inset, 0 4px 5px #c8d5e6;
   transition: 0.4s;
@@ -454,7 +536,7 @@ border: 1px solid rgba(15, 156, 230, 0.3);
   border-radius: 20px;
   left: 0.35em;
   bottom: 0.3em;
-  background-color: transparent;
+  background-color: #4fa8dc;
   outline: 2px solid #d2d6d8;
   transition: 0.4s;
 }
@@ -462,7 +544,7 @@ border: 1px solid rgba(15, 156, 230, 0.3);
 .switch input:checked + .slider:before {
   content: "on";
   background-color: #d2d6d8;
-  color: white;
+  color: #000;
   transform: translateX(3.1em);
 }
 

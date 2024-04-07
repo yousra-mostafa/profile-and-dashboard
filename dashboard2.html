@@ -31,6 +31,8 @@
     <!-- <FontAwesomeIcon icon="fa-regular fa-lightbulb" /> -->
     <!-- -----------lamp off--------- -->
     <!-- <FontAwesomeIcon icon="fa-solid fa-lightbulb" /> -->
+    <!-- -------------blog------------ -->
+    <!-- <FontAwesomeIcon icon="fa-solid fa-blog" style={{color: "#ffffff",}} /> -->
 
     <nav class="nav1">
         <button id="nav1-bars"><i class="fa-solid fa-bars fa-2x"></i></button>
@@ -43,7 +45,7 @@
             <!-- -------------------navbar--------- -->
 
             <nav class="navbar">
-                <ul>
+                <ul class="no-padding">
 
 
                     <li class="home">
@@ -54,8 +56,13 @@
 
 
                     <li class="margin-li">
-                        <a href="#Health-Status"><i class="fa-solid fa-bell big"></i> <span
+                        <a href="./Notification.html"><i class="fa-solid fa-bell big"></i> <span
                                 class="headar-span">Notifications</span></a>
+                    </li>
+
+                    <li>
+                        <a href="#Health-Status"><i class="fa-solid fa-blog big" style="color: #ffffff;"></i><span
+                                class="headar-span">Blog</span></a>
                     </li>
                     <li>
                         <a href="#Health-Status"><i class="fa-solid fa-file big"></i> <span
@@ -77,14 +84,15 @@
 
         </div>
     </header>
+    <!-- --------------------end header----------------- -->
     <!-- -------------------- start garage and security system----------------- -->
-<div class="conteainer">
+
 
     <section class="first-cards">
         <div class="container1-left toggel-div">
             <div class="container1">
                 <div class="grid-for-two">
-                    <div class="card1 three-card">
+                    <div class="card1 three-card1">
                         <div class="flex">
                             <img class="lock-svg" src="./donorProfileImg/lock-slash-svgrepo-com.svg" alt="">
                             <img src="./donorProfileImg//lock-svgrepo-com.svg" alt="" class="garage-svg">
@@ -96,9 +104,9 @@
                                 <span class="slider"></span>
                             </label>
                         </div>
-                        
+
                     </div>
-                    <div class="card1 three-card">
+                    <div class="card1 three-card1">
                         <div class="flex">
                             <img class="garage-svg" src="./donorProfileImg/garage-svgrepo-com.svg" alt="">
                             <h5 class="card1-h">Garage doors</h5>
@@ -110,45 +118,47 @@
                                 <span class="slider"></span>
                             </label>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
 
-        
+
     </section>
     <!-- -------------------- end garage and security system----------------- -->
-    
+
     <!-- --------------------start main section----------------- -->
     <!-- <i class="fa-solid fa-lightbulb"></i> -->
     <section class="main-section">
         <div class="container1-left toggel-div">
             <div class="container1">
                 <div class="grid-for-three">
-                    
-                    <div class="three-card card-lights-one">
+
+                    <!-- ------------------- start card 1--------------- -->
+                    <div class="three-card three-card1 card-lights-one">
                         <h3 class="three-card-h">Lights - interior</h3>
                         <div class="lights">
                             <div class="flex1">
-                                <i class="fa-solid fa-lightbulb"></i>
+                                <i class="close-light fa-solid fa-lightbulb"></i>
                                 <i class="lamp-light remove fa-regular fa-lightbulb"></i>
                                 <h2 class="main-h2">Kitchen</h2>
-                                
+
                             </div>
                             <div class="">
                                 <label class="switch toggel-light">
                                     <input type="checkbox" />
                                     <span class="slider"></span>
                                 </label>
-                                
+
                             </div>
                         </div>
                         <!-- ----------- start reapeate div => lights----------- -->
 
                         <div class="lights">
                             <div class="flex1">
-                                <i class="lamp-light fa-regular fa-lightbulb"></i>
+                                <i class=" fa-solid fa-lightbulb"></i>
+
                                 <!-- <i class="fa-solid fa-lightbulb"></i> -->
 
                                 <h2 class="main-h2">Dining room</h2>
@@ -156,79 +166,225 @@
                             </div>
                             <div class="">
                                 <label class="switch toggel-light">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" disabled />
                                     <span class="slider"></span>
                                 </label>
-                                
+
                             </div>
                         </div>
                         <div class="lights">
                             <div class="flex1">
-                                <i class="lamp-light fa-regular fa-lightbulb"></i>
+                                <i class=" fa-solid fa-lightbulb"></i>
+
                                 <h2 class="main-h2">Living room</h2>
-                                
+
                             </div>
                             <div class="">
                                 <label class="switch toggel-light">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" disabled />
                                     <span class="slider"></span>
                                 </label>
-                                
+
                             </div>
                         </div>
                         <div class="lights">
                             <div class="flex1">
-                                <i class="lamp-light fa-regular fa-lightbulb"></i>
+                                <i class=" fa-solid fa-lightbulb"></i>
+
                                 <h2 class="main-h2">Bedroom</h2>
-                                
+
                             </div>
                             <div class="">
                                 <label class="switch toggel-light">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" disabled />
                                     <span class="slider"></span>
                                 </label>
-                                
+
                             </div>
                         </div>
                         <div class="lights">
                             <div class="flex1">
-                                <i class="lamp-light fa-regular fa-lightbulb"></i>
+                                <i class=" fa-solid fa-lightbulb"></i>
+
                                 <h2 class="main-h2">Bathroom</h2>
 
                             </div>
                             <div class="">
                                 <label class="switch toggel-light">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" disabled />
                                     <span class="slider"></span>
                                 </label>
-                                
+
                             </div>
                         </div>
                         <hr class="hr" />
                         <!-- ----------- end reapeate div => lights----------- -->
-                        
+
                         <div class="two-buttons">
-                            <button class="control-btns">All ON</button>
+                            <button class="All-ON control-btns">All ON</button>
                             <button class="control-btns">All OFF</button>
                         </div>
                     </div>
-                    
-                    <div class="three-card">
+                    <!-- ------------------- end card 1--------------- -->
+
+                    <!-- ------------------- start card 2--------------- -->
+
+                    <div class="three-card three-card2">
                         <h3 class="three-card-h">Lights - exterior</h3>
-                        
+                        <div class="three-card1 margin-for-lights2">
+                            <div class="lights2">
+                                <div class="flex1">
+                                    <i class="close-light fa-solid fa-lightbulb"></i>
+                                    <i class="lamp-light remove fa-regular fa-lightbulb"></i>
+                                    <h2 class="main-h2">Back doors</h2>
+
+                                </div>
+                                <div class="">
+                                    <label class="switch toggel-light">
+                                        <input type="checkbox" />
+                                        <span class="slider"></span>
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three-card1 margin-for-lights2">
+                            <div class="lights2">
+                                <div class="flex1">
+                                    <i class="close-light fa-solid fa-lightbulb"></i>
+                                    <i class="lamp-light remove fa-regular fa-lightbulb"></i>
+                                    <h2 class="main-h2">Front doors</h2>
+
+                                </div>
+                                <div class="">
+                                    <label class="switch toggel-light">
+                                        <input type="checkbox" />
+                                        <span class="slider"></span>
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three-card1 margin-for-lights2">
+                            <div class="lights2">
+                                <div class="flex1">
+                                    <i class="close-light fa-solid fa-lightbulb"></i>
+                                    <i class="lamp-light remove fa-regular fa-lightbulb"></i>
+                                    <h2 class="main-h2">Pool</h2>
+
+                                </div>
+                                <div class="">
+                                    <label class="switch toggel-light">
+                                        <input type="checkbox" />
+                                        <span class="slider"></span>
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three-card1 margin-for-lights2">
+                            <div class="lights2">
+                                <div class="flex1">
+                                    <i class="close-light fa-solid fa-lightbulb"></i>
+                                    <i class="lamp-light remove fa-regular fa-lightbulb"></i>
+                                    <h2 class="main-h2">Garage</h2>
+
+                                </div>
+                                <div class="">
+                                    <label class="switch toggel-light">
+                                        <input type="checkbox" />
+                                        <span class="slider"></span>
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
-                    <div class="three-card">
-                        <h3 class="three-card-h">Appliances</h3>
+
+                    <!-- ------------------- end card 2--------------- -->
+                    <!-- ------------------- start card 3--------------- -->
+
+
+                    <div class="three-card theard-card card3-main-section">
+                        <h3 class="three-card-h card3-h">Appliances</h3>
+                        <hr class="margin-hr horizontal light mt-0 mb-2" />
+                        <div class="lights3">
+                            <div class="flex-app">
+                                <div>
+                                    <img class="washing-svg" src="./donorProfileImg/washing-machine-2-svgrepo-com.svg"
+                                        alt="">
+                                </div>
+                                <div>
+
+                                    <h2 class="card3-h2">Washing machine</h2>
+                                    <p class="card3-p">Remaining time</p>
+                                </div>
+
+                            </div>
+                            <div class="">
+                               <p class="card3-p2">OFF</p>
+                               <p class="card3-p">666</p>
+
+                            </div>
+                        </div>
+                        <!-- ---------------repeate----------- -->
+                        <hr class="margin-hr horizontal light mt-0 mb-2" />
+
+                        <div class="lights3">
+                            <div class="flex-app">
+                                <div>
+                                    <img class="washing-svg" src="./donorProfileImg/fridge-2-svgrepo-com.svg"
+                                        alt="">
+                                </div>
+                                <div>
+
+                                    <h2 class="card3-h2">Fridge</h2>
+                                    <p class="card3-p">Temperature</p>
+                                </div>
+
+                            </div>
+                            <div class="">
+                               <p class="card3-p2">OFF</p>
+                               <p class="card3-p">35°F</p>
+
+                            </div>
+                        </div>
+                        <hr class="margin-hr horizontal light mt-0 mb-2" />
+
+                        <div class="lights3">
+                            <div class="flex-app">
+                                <div>
+                                    <img class="washing-svg" src="./donorProfileImg/tv-svgrepo-com.svg"
+                                        alt="">
+                                </div>
+                                <div>
+
+                                    <h2 class="card3-h2">TV</h2>
+                                </div>
+
+                            </div>
+                            <div class="">
+                               <p class="card3-p2">OFF</p>
+
+                            </div>
+                        </div>
+
+
+
                     </div>
+                    <!-- ------------------- end card 3--------------- -->
+
                 </div>
             </div>
         </div>
     </section>
-</div>
-    
+
+
     <!-- --------------------end main section----------------- -->
-    
-    
+
+
 </body>
 <script src="navbarwidth.js"></script>
 
